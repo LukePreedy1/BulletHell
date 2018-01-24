@@ -316,7 +316,7 @@ class Enemy extends Ship {
   isTouchingBullets(bullets: Array<Bullet>, numBullets: number): number {
     var temp: number = super.isTouchingBullets(bullets, numBullets);
     if (temp != -1 && bullets[temp].friendly) {
-      return temp;
+      return temp; 
     }
     return -1;
   }
